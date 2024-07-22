@@ -1,19 +1,9 @@
-import {} from 'react'
-
-
-import './App.css'
+import React from 'react'
+import Router from '../src/components/Router.jsx'
 
 function App() {
-
-
     return (
-        <>
-            <div className="App">
-                <h1 className="text-3xl font-bold underline">
-                    Hello, Tailwind with React!
-                </h1>
-            </div>
-        </>
+        <Router/>
     )
 }
 
