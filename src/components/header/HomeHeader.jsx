@@ -1,11 +1,13 @@
 import React from 'react';
 
 const HomeHeader = () => {
-    return (
-        <div>
-            HomeHeader
-        </div>
-    );
+    return (<>
+
+
+        </>
+
+    )
+        ;
 };
 
 export default HomeHeader;
