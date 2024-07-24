@@ -26,4 +26,7 @@
     background: #000;
 }
 
+.custom-navLink {
+    @apply h-20 w-48 flex items-center justify-center border-2 border-dark py-4 px-6 hover:bg-accent transition duration-200 font-bold text-center;
+}
 

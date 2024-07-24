@@ -11,16 +11,15 @@ const SimpleSteps = () => {
 
         <section>
             <div className="flex flex-col items-center mx-auto pt-16  ">
-                <div className="mx-auto  text-center">
+                <div className="mx-auto text-center mb-6">
                     <h2 className="text-3xl font-bold mb-3 lg:text-4xl">
                         Wystarczą 4 proste kroki
                     </h2>
-                    <img src={Decoration} alt="decor" className="mx-auto py-6"/>
+                    <img src={Decoration} alt="decor" className="mx-auto "/>
                 </div>
 
                 <div
                     className="w-full grid mx-auto gap-12 bg-lightes py-16 *:w-full *:col-span-1 *:text-center md:grid-cols-2 xl:grid-cols-4">
-
                     <div>
                         <img src={Icon1} alt="tShirt" className="mx-auto"/>
                         <h4 className="mt-4 mb-2  text-lg font-bold lg:text-xl">
@@ -53,6 +52,7 @@ const SimpleSteps = () => {
                             Wybierz zaufane miejsce
                         </p>
                     </div>
+
                     <div>
                         <img src={Icon4} alt="" className="mx-auto"/>
                         <h4 className="mt-4 mb-2  text-lg font-bold lg:text-xl">
@@ -66,7 +66,7 @@ const SimpleSteps = () => {
 
                 </div>
                 <Link to="/login"
-                      className="border-2 border-dark p-5 my-8 hover:bg-accent transition duration-200 font-bold">
+                      className="border-2 border-dark p-5 mt-10 hover:bg-accent transition duration-200 font-bold">
                     Oddaj Rzeczy
                 </Link>
             </div>

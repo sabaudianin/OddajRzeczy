@@ -1,37 +1,35 @@
 import React from 'react';
-import Decoration from '../../assets/Decoration.svg';
-import {NavLink, Outlet} from "react-router-dom";
+
+import CustomNavLink from "./CustomNavLink.jsx";
+import Decor from "./Decor.jsx"
+import CustomSection from "./CustomSection.jsx";
+import {Outlet} from "react-router-dom";
 
 const WhoWeHelp = () => {
     return (
-        <section>
+        <CustomSection>
             <div>
-                <h2 className="text-4xl pt-16">Komu pomagamy?</h2>
-                <img src={Decoration} alt="decor" className="mx-auto pt-6"/>
-                <div className="flex items-center justify-center py-16 space-x-4">
-                    <NavLink to='fundations'
-                             className="h-20 w-48 flex items-center justify-center border-2 border-dark py-4 px-6 hover:bg-accent transition duration-200 font-bold text-center">
+                <Decor text="Komu Pomagamy ? "/>
+                <div className="flex items-center justify-center py-4 space-x-4">
+                    <CustomNavLink to='fundations'>
                         Fundacjom
-                    </NavLink>
-                    <NavLink to="organization"
-                             className="h-20 w-48 border-2 border-dark py-4 px-6 hover:bg-accent transition duration-200 font-bold text-center">
+                    </CustomNavLink>
+                    <CustomNavLink to="organization">
                         Organizacjom pozarządowym
-                    </NavLink>
-                    <NavLink to="lokals"
-                             className="h-20 w-48 border-2 border-dark py-4 px-6 hover:bg-accent transition duration-200 font-bold text-center">
+                    </CustomNavLink>
+                    <CustomNavLink to="lokals">
                         Lokalnym zbiórkom
-                    </NavLink>
+                    </CustomNavLink>
                 </div>
-                <p className="text-xl">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi
+                <p className="text-xl pt-8">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi
                     współpracujemy. Możesz sprawdzić
                     czym się zajmują, komu pomagają i czego potrzebują.</p>
             </div>
             <div className="p-16">
                 <Outlet/>
             </div>
-        </section>
-    )
-        ;
+        </CustomSection>
+    );
 };
 
 export default WhoWeHelp;
