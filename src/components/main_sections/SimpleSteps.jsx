@@ -10,9 +10,8 @@ const SimpleSteps = () => {
     return (
 
         <section>
-            <div
-                className="flex flex-col items-center mx-auto py-10  ">
-                <div className="  mx-auto max-w-[36.75rem] text-center ">
+            <div className="flex flex-col items-center mx-auto pt-16  ">
+                <div className="mx-auto  text-center">
                     <h2 className="text-3xl font-bold mb-3 lg:text-4xl">
                         Wystarczą 4 proste kroki
                     </h2>
@@ -60,15 +59,16 @@ const SimpleSteps = () => {
                             Zamów kuriera
                         </h4>
                         <div className="custom-hr my-4"></div>
-                        <p>
+                        <p className="mr-2">
                             Kurier przyjedzie w dogodnym terminie
                         </p>
                     </div>
 
                 </div>
                 <Link to="/login"
-                      className="border-2 border-dark p-5 my-8 hover:bg-accent transition duration-200 font-bold"> Oddaj
-                    Rzeczy</Link>
+                      className="border-2 border-dark p-5 my-8 hover:bg-accent transition duration-200 font-bold">
+                    Oddaj Rzeczy
+                </Link>
             </div>
         </section>
 

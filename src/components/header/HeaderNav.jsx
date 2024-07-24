@@ -53,7 +53,7 @@ const HeaderNav = () => {
                                 <a className=" hover:border-b-2 hover:border-black" href="#">
                                     Funkcje i organizacje
                                 </a>
-                                <a className=" hover:border-b-2 hover:border-black" href="#">
+                                <a className="hover:border-b-2 hover:border-black" href="#">
                                     Kontakt
                                 </a>
                             </div>
