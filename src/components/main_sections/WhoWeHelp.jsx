@@ -21,11 +21,13 @@ const WhoWeHelp = () => {
                         Lokalnym zbiórkom
                     </CustomNavLink>
                 </div>
-                <p className="text-xl pt-8">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi
+                <p className="text-xl pt-8 bg-primary">W naszej bazie znajdziesz listę zweryfikowanych Fundacjii,
+                    Organizacji
+                    pozarządowych i lokalnych zbiórek z którymi
                     współpracujemy. Możesz sprawdzić
                     czym się zajmują, komu pomagają i czego potrzebują.</p>
             </div>
-            <div className="p-16">
+            <div className="p-16 bg-primary">
                 <Outlet/>
             </div>
         </CustomSection>
