@@ -6,7 +6,7 @@ import Instagram from "../../assets/Instagram.svg"
 
 const Contact = () => {
     return (
-        <section className="mt-20">
+        <section id="contact">
             <div className="relative w-full">
                 <div
                     className="absolute inset-0 bg-[url('src/assets/Background-Contact-Form.jpg')] bg-cover bg-center opacity-25"></div>

@@ -9,7 +9,7 @@ import Icon4 from '../../assets/Icon4.svg';
 const SimpleSteps = () => {
     return (
 
-        <section>
+        <section id="simpleSteps">
             <div className="flex flex-col items-center mx-auto pt-16  ">
                 <div className="mx-auto text-center mb-6">
                     <h2 className="text-3xl font-bold mb-3 lg:text-4xl">
