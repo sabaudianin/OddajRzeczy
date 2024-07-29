@@ -8,6 +8,7 @@ import WhoWeHelp from "./main_sections/WhoWeHelp.jsx";
 import Contact from "./footer/Contact.jsx";
 import StartCTA from "./header/StartCTA.jsx";
 
+
 const Home = () => {
     return (
         <>
@@ -20,6 +21,7 @@ const Home = () => {
             <About/>
             <WhoWeHelp/>
             <Contact/>
+
         </>
     );
 };

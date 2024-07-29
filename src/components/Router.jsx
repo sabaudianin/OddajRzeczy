@@ -21,6 +21,7 @@ const Router = () => {
             <Route path="/signUp" element={<SignUp/>}/>
             <Route path="/logout" element={<Logout/>}/>
 
+
         </Routes>
     );
 };
