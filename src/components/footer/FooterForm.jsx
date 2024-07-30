@@ -73,11 +73,13 @@ const FooterForm = () => {
                         });
                     }
                 })
+
                 .then(data => {
                     console.log(data);
                     setSubmitStatus("Wiadomość wysłana pomyślnie");
                     // setTimeout(() => setSubmitStatus(''), 5000);
                 })
+
                 .catch(error => {
                     if (error.data && error.data.errors) {
                         console.log(error.data)

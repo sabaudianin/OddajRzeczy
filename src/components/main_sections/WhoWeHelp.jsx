@@ -12,13 +12,13 @@ const WhoWeHelp = () => {
                 <Decor text="Komu Pomagamy ? "/>
                 <div
                     className="flex flex-col sm:flex-row items-center justify-center py-4 space-y-2 sm:space-y-0 sm:space-x-4">
-                    <CustomNavLink to='fundations'>
+                    <CustomNavLink to='/whowehelp/fundations'>
                         Fundacjom
                     </CustomNavLink>
-                    <CustomNavLink to="organization">
+                    <CustomNavLink to='/whowehelp/organizations'>
                         Organizacjom pozarządowym
                     </CustomNavLink>
-                    <CustomNavLink to="lokals">
+                    <CustomNavLink to='/whowehelp/lokals'>
                         Lokalnym zbiórkom
                     </CustomNavLink>
                 </div>

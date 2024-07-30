@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import {Link, animateScroll as scroll} from "react-scroll";
+import {useNavigate} from 'react-router-dom';
+
 
 const HeaderNav = () => {
+    const navigate = useNavigate();
+    const handleNavigate = useCallback(() => {
+        navigate('/');
+    }, [navigate]);
+
+
     return (
 
         <section className="relative">
@@ -28,16 +36,12 @@ const HeaderNav = () => {
                         <div
                             className="absolute top-11 -left-500 w-[300px] hidden peer-has-[:checked]:flex flex-col gap-2 bg-white shadow-md rounded-lg px-6 py-4 lg:relative lg:top-0 lg:left-0 lg:w-auto lg:flex lg:flex-row lg:border-none lg:p-0 lg:shadow-none *:flex *:items-center *:gap-x-1.5 *:py-1.5 *:text-sm *:text-gray-950  *:font-medium lg:*:px-2">
 
-                            <Link
-                                to="start"
-                                duration={500}
-                                smooth={true}
-                                spy={true}
-                                offset={-100}
+                            <a
+                                onClick={handleNavigate}
                                 className="border-b-2 border-transparent box-border hover:border-b-2 hover:border-black">
                                 Start
 
-                            </Link>
+                            </a>
                             <Link
                                 to="simpleSteps"
                                 duration={500}
