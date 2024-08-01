@@ -13,11 +13,13 @@ import Contact from "./footer/Contact.jsx";
 import StartCTA from "./header/StartCTA.jsx";
 import Login from "./accounts/Login.jsx";
 import SignUp from "./accounts/SignUp.jsx";
+import Logout from "./accounts/Logout.jsx";
 
 
 const Home = () => {
     const [showLogin, setShowLogin] = useState(false);
     const [showSignUp, setShowSignUp] = useState(false);
+    const [showLogout, setShowLogout] = useState(false);
     const location = useLocation();
 
 
@@ -25,12 +27,19 @@ const Home = () => {
         if (location.pathname === '/login') {
             setShowLogin(true);
             setShowSignUp(false);
+            setShowLogout(false);
         } else if (location.pathname === '/signUp') {
             setShowLogin(false);
             setShowSignUp(true);
+            setShowLogout(false);
+        } else if (location.pathname === '/logout') {
+            setShowLogin(false);
+            setShowSignUp(false);
+            setShowLogout(true);
         } else {
             setShowLogin(false);
             setShowSignUp(false);
+            setShowLogout(false);
         }
     }, [location]);
 
@@ -38,15 +47,14 @@ const Home = () => {
         console.log(location.state)
         const target = location.state?.target;
         console.log(target);
-        if (!showLogin && !showSignUp && target) {
+        if (!showLogin && !showSignUp && !showLogout && target) {
             scroller.scrollTo(target, {
                 duration: 500,
                 smooth: true,
                 offset: -100
             });
-            console.log(`Scrolling to ${target}`);
         }
-    }, [location.state, showLogin, showSignUp]);
+    }, [location.state, showLogin, showSignUp, showLogout]);
 
 
     return (
@@ -59,7 +67,10 @@ const Home = () => {
             {showSignUp && (
                 <SignUp showSignUp={showSignUp} setShowSignUp={setShowSignUp}/>
             )}
-            {!showLogin && !showSignUp && (
+            {showLogout && (
+                <Logout showLogout={showLogout} setShowLogout={setShowLogout}/>
+            )}
+            {!showLogin && !showSignUp && !showLogout && (
                 <>
                     <StartCTA/>
                     <Three_columns/>

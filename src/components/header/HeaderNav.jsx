@@ -12,7 +12,8 @@ const HeaderNav = () => {
         navigate('/', {state: {target}});
     };
 
-    const isAuthView = location.pathname === '/login' || location.pathname === '/signUp';
+    const isAuthView = location.pathname === '/login' || location.pathname === '/signUp' || location.pathname === '/logout';
+
 
     return (
         <section className="relative">
@@ -42,7 +43,7 @@ const HeaderNav = () => {
                                 <>
                                     <Link to="/"
                                           onClick={() => handleNavigate("start")}
-                                          state={{target: "sstart"}}
+                                          state={{target: "start"}}
                                           className="border-b-2 border-transparent hover:border-b-2 hover:border-black">Start</Link>
                                     <Link
                                         to="/"

@@ -19,7 +19,7 @@ const Contact = () => {
                 </div>
                 <footer className="flex justify-between items-center w-full mt-40 mb-6">
                     <p className="mx-auto">Copyright Raf Bob</p>
-                    <div className="flex space-x-5">
+                    <div className="flex space-x-5 mr-4">
                         <img src={Facebook} alt="facebook" className="w-6 h-6"/>
                         <img src={Instagram} alt="instagram" className="w-6 h-6"/>
                     </div>
