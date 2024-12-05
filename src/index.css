@@ -1,12 +1,6 @@
 @import './styles/tailwind.css';
+@import './styles/globalStyles.css';
+@import 'styles/customStyles.css';
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
 
-:root {
-    max-width: 1366px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-}
+
